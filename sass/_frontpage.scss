@@ -1,0 +1,268 @@
+.home{
+
+/* Layout */
+.l-container{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    position: relative;
+    text-align: center;
+    @include mobile{
+        max-width: 290px;
+    }
+    @include tablet{
+        max-width: 700px;
+    }
+    @include desktop{
+        max-width: 1100px;
+    }
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    @include tablet{
+        font-size: 0.9rem;
+    }
+}
+p{
+    font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.03rem;
+    @include mobile{
+        font-size:0.6rem;
+    }
+    @include tablet{
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Themes */
+
+.theme-dark{
+    background-color: #FFA31D;
+    color: #fdfdfd;
+}
+
+.theme-light{
+    background-color: #fdfdfd;
+    color: #111;
+}
+
+.about-section{
+    height:100vh;
+    @include tablet{
+        height: 80vh;
+    }
+    .l-container{
+        position:relative;
+        height:100vh;
+        display: flex;
+        flex-direction:column;
+        @include tablet{
+            flex-direction: row;
+            align-items: center;
+            height: 80vh;
+        }
+        @include desktop{
+            max-width: 1000px;
+        }
+        h2{
+            color: #d6d6d6;
+        }
+        .about-logo{
+            width: 130px;
+            @include mobile{
+                width: 100px;
+            }
+            @include tablet{
+                display:none;
+            }
+        }
+        .button{
+            width: 150px;
+            padding: 4px 0;
+            @include mobile{
+                width: 130px;
+            }
+            @include tablet{
+                width: 200px;
+            }
+        }
+        
+        .app-image{
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
+            max-width:300px;
+            @include mobile{
+                max-width: 250px;
+            }
+            @include tablet{
+                width: 350px;
+                max-width:400px;
+            }
+            @include desktop{
+                width: 430px;
+                max-width: 600px;
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
+.about-text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        align-items:flex-start;
+        text-align: left;
+        width: 50%;
+    }
+    @include desktop{
+        width: 40%;
+    }
+}
+
+.about-app-section{
+    display: flex;
+    justify-content: center;
+    @include tablet{
+        justify-content: flex-start;
+    }
+}
+
+.service-section{
+    height: 200vh;
+    @include tablet{
+        background-color: #fdfdfd;
+        color: #FFA31D;
+        height: 100vh;
+    }
+    .service-container{
+        @include tablet{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }
+    .l-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include tablet{
+            justify-content: flex-start;
+        }
+        img{
+            width:80px;
+            @include tablet{
+                margin-top: 30px;
+                width: 90px;
+            }
+        }
+        h2{
+            font-size: 1.8rem;
+            @include tablet{
+                font-size: 1.9rem;
+            }
+        }
+        p{
+            font-size: 0.8rem;
+            @include tablet{
+                font-size: 0.9rem;
+            }
+        }
+        .icon-one{
+            @include tablet{
+                display:none;
+            }
+        }
+        .icon-one-dark{
+            display: none;
+            @include tablet{
+                display:block;
+            }
+        }
+        .icon-two{
+            @include tablet{
+                display:none;
+            }
+        }
+        .icon-two-dark{
+            display: none;
+            @include tablet{
+                display:block;
+            }
+        }
+        .icon-three{
+            @include tablet{
+                display:none;
+            }
+        }
+        .icon-three-dark{
+            display: none;
+            @include tablet{
+                display:block;
+            }
+        }
+        .icon-four{
+            @include tablet{
+                display:none;
+            }
+        }
+        .icon-four-dark{
+            display: none;
+            @include tablet{
+                display:block;
+            }
+        }
+    }
+    .service{
+        height: 50vh;
+        @include tablet{
+            width: 310px;
+        }
+    }
+}
+
+
+
+.about2-section{
+    height: 50vh;
+    @include tablet{
+        height: 100vh;
+    }
+    .l-container{
+        position:relative;
+        height:50vh;
+        display: flex;
+        @include tablet{
+            height: 100vh;
+            justify-content: center;
+        }
+    }
+}
+
+.about2-image{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    @include tablet{
+        bottom: 0;
+    }
+    @include desktop{
+        width: 750px;
+    }
+}
+}
