@@ -64,11 +64,7 @@ p{
     .l-container{
         position:relative;
         height:100vh;
-        display: flex;
-        flex-direction:column;
         @include tablet{
-            flex-direction: row;
-            align-items: center;
             height: 80vh;
         }
         @include desktop{
@@ -98,16 +94,17 @@ p{
         }
         
         .app-image{
+            width: 250px;
             position: absolute;
-            bottom: 0;
-            margin: 0 auto;
-            max-width:300px;
-            @include mobile{
-                max-width: 250px;
-            }
+            bottom:0;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, 0%);
             @include tablet{
                 width: 350px;
                 max-width:400px;
+                left: 50%;
+                transform: translate(0%, 0%);
             }
             @include desktop{
                 width: 430px;
@@ -126,17 +123,11 @@ p{
         align-items:flex-start;
         text-align: left;
         width: 50%;
+        margin-top: 16%;
     }
     @include desktop{
         width: 40%;
-    }
-}
-
-.about-app-section{
-    display: flex;
-    justify-content: center;
-    @include tablet{
-        justify-content: flex-start;
+        margin-top: 8%;
     }
 }
 
@@ -239,17 +230,15 @@ p{
 
 
 .about2-section{
-    height: 50vh;
+    height: 40vh;
     @include tablet{
         height: 100vh;
     }
     .l-container{
         position:relative;
-        height:50vh;
-        display: flex;
+        height:40vh;
         @include tablet{
             height: 100vh;
-            justify-content: center;
         }
     }
 }
@@ -257,7 +246,9 @@ p{
 .about2-image{
     position: absolute;
     bottom: 0;
-    margin: 0 auto;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
     @include tablet{
         bottom: 0;
     }

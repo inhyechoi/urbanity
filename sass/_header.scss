@@ -43,6 +43,9 @@ header {
        display:block; 
        display: flex;
        align-items: center;
+       position: fixed;
+       top: 0;
+       background-color: #fdfdfd;
     }
 }
 

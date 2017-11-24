@@ -27,10 +27,9 @@ get_header(); ?>
                         <p><?php echo the_field('about_sub_text'); ?></p>
                         <img class="appstore button" src="<?php the_field('appstore_button'); ?>" />
                         <img class="googleplay button" src="<?php the_field('googleplay_button'); ?>" />
-                    </div>
-                    <div class="about-app-section">
                         <img class="app-image" src="<?php the_field('app_image'); ?>" />
                     </div>
+                       
                 </div>
              </section>
 
