@@ -1,8 +1,8 @@
 /*!
-Theme Name: Urbanity Theme
+Theme Name: Pokerrito Theme
 Theme URI: http://underscores.me/
-Author: Urbanity-dev
-Author URI: 
+Author: RED Academy
+Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Urbanity Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Pokerrito Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -702,7 +702,7 @@ object {
         height: 80vh; } }
     .home .about-section .l-container {
       position: relative;
-      height: 100vh;}
+      height: 100vh; }
       @media (min-width: 720px) {
         .home .about-section .l-container {
           height: 80vh; } }
@@ -731,16 +731,16 @@ object {
       .home .about-section .l-container .app-image {
         width: 250px;
         position: absolute;
-        bottom:0;
+        bottom: 0;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, 0%);}
+        transform: translate(-50%, 0%); }
         @media (min-width: 720px) {
           .home .about-section .l-container .app-image {
             width: 350px;
-            max-width: 400px; 
+            max-width: 400px;
             left: 50%;
-            transform: translate(0%, 0%);} }
+            transform: translate(0%, 0%); } }
         @media (min-width: 1000px) {
           .home .about-section .l-container .app-image {
             width: 430px;
@@ -758,7 +758,7 @@ object {
         -ms-flex-align: start;
             align-items: flex-start;
         text-align: left;
-        width: 50%; 
+        width: 50%;
         margin-top: 16%; } }
     @media (min-width: 1000px) {
       .home .about-text-section {
@@ -848,13 +848,13 @@ object {
         .home .service-section .service {
           width: 310px; } }
   .home .about2-section {
-    height: 50vh; }
+    height: 40vh; }
     @media (min-width: 720px) {
       .home .about2-section {
         height: 100vh; } }
     .home .about2-section .l-container {
       position: relative;
-      height: 50vh; }
+      height: 40vh; }
       @media (min-width: 720px) {
         .home .about2-section .l-container {
           height: 100vh; } }
@@ -863,7 +863,7 @@ object {
     bottom: 0;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, 0%);  }
+    transform: translate(-50%, 0%); }
     @media (min-width: 720px) {
       .home .about2-image {
         bottom: 0; } }
@@ -925,6 +925,53 @@ footer .button {
   @media (min-width: 720px) {
     footer .button {
       width: 200px; } }
+
+footer #primary-menu ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  list-style: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 1rem;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif; }
+  @media (min-width: 720px) {
+    footer #primary-menu ul {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+  footer #primary-menu ul li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #111; }
+  footer #primary-menu ul li a:visited {
+    text-decoration: none;
+    color: #111; }
+  footer #primary-menu ul li a:hover {
+    color: #FFA31D; }
+
+footer #primary-menu .page-item-318 {
+  display: none; }
+
+footer .social {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100px; }
+
+footer .copyright {
+  padding: 0 0 1rem 0 !important; }
 
 /* Layout */
 .h-container {

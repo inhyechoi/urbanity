@@ -25,7 +25,12 @@
 						<p><?php echo the_field('email'); ?></p>
 					</div>
 				</div>
-				<div class="copyright l-container">
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') );?>
+        <div class="social">
+          <a href="https://www.facebook.com/hdurbanity"><img class="fb" src="<?php echo get_template_directory_uri() ?>/assets/fb.png" /></a>
+          <a href="https://www.instagram.com/hdurbanity/"><img class="fb" src="<?php echo get_template_directory_uri() ?>/assets/ig.png" /></a>
+        </div>
+        <div class="copyright l-container">
 					<p>© 2017 - URBANITY - All Rights Reserved</p>
 				</div>
 		</div><!-- .site-info -->
