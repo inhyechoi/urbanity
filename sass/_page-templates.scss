@@ -2,4 +2,16 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* terms of services, prohibited item,  */
+
+.page-id-347, .page-id-348, .page-id-350, .page-id-352, .page-id-354, .page-id-356{
+  .main-text-container{
+    display: none;
+  }
+  .entry-header{
+    display:none !important;
+  }
+  .entry-footer{
+    display:none;
+  }
+}

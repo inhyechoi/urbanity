@@ -1,59 +1,98 @@
-.home{
 /* Layout */
 .l-container{
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 1rem 0;
-    position: relative;
-    text-align: center;
-    @include mobile{
-        max-width: 290px;
-    }
-    @include tablet{
-        max-width: 700px;
-    }
-    @include desktop{
-        max-width: 1100px;
-    }
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  position: relative;
+  text-align: center;
+  @include mobile{
+      max-width: 290px;
+  }
+  @include tablet{
+      max-width: 700px;
+  }
+  @include desktop{
+      max-width: 1100px;
+  }
 }
 
-h2{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 0.6rem;
-    margin: 0;
-    letter-spacing: 0.1rem;
-    @include tablet{
-        font-size: 0.9rem;
-    }
+.l-container2{
+  max-width: 300px;
+  margin: 3rem auto 0 auto;
+  padding: 1rem 0;
+  position: relative;
+  text-align: left;
+  @include mobile{
+      max-width: 290px;
+  }
+  @include tablet{
+      max-width: 700px;
+      margin: 5rem auto 0 auto;
+  }
+  @include desktop{
+      max-width: 1100px;
+      margin: 5rem auto 0 auto;
+  }
 }
-p{
-    font-weight: 200;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    font-size: 0.7rem;
-    letter-spacing: 0.03rem;
-    @include mobile{
-        font-size:0.6rem;
-    }
-    @include tablet{
-        font-size: 0.9rem;
-    }
-}
-
 
 /* Themes */
 
 .theme-dark{
-    background-color: #FFA31D;
-    color: #fdfdfd;
+  background-color: #FFA31D;
+  color: #fdfdfd;
 }
 
 .theme-light{
-    background-color: #fdfdfd;
-    color: #111;
+  background-color: #fdfdfd;
+  color: #111;
 }
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+  @include tablet{
+      font-size: 0.9rem;
+  }
+}
+p{
+  font-weight: 200;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.03rem;
+  @include mobile{
+      font-size:0.6rem;
+  }
+  @include tablet{
+      font-size: 0.9rem;
+  }
+}
+
+span{
+  font-weight: 200;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.03rem;
+  @include mobile{
+      font-size:0.6rem;
+  }
+  @include tablet{
+      font-size: 0.9rem;
+  }
+}
+
+b{
+  font-weight: 300;
+  font-family: 'Source Sans Pro' sans-serif;
+}
+
+.home{
+
 
 .about-section{
     height:100vh;
@@ -93,17 +132,19 @@ p{
         }
         
         .app-image{
-            width: 250px;
+            width: 230px;
             position: absolute;
             bottom:0;
             left: 50%;
             margin-right: -50%;
-            transform: translate(-50%, 0%);
+            -webkit-transform: translate(-50%, 0%);
+                    transform: translate(-50%, 0%);
             @include tablet{
                 width: 350px;
                 max-width:400px;
                 left: 50%;
-                transform: translate(0%, 0%);
+                -webkit-transform: translate(0%, 0%);
+                        transform: translate(0%, 0%);
             }
             @include desktop{
                 width: 430px;
@@ -115,11 +156,21 @@ p{
 }
 
 .about-text-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10px;
     @include tablet{
-        align-items:flex-start;
+        -webkit-box-align:start;
+            -ms-flex-align:start;
+                align-items:flex-start;
         text-align: left;
         width: 50%;
         margin-top: 16%;
@@ -139,20 +190,37 @@ p{
     }
     .service-container{
         @include tablet{
+            display:-webkit-box;
+            display:-ms-flexbox;
             display:flex;
-            flex-direction:row;
-            flex-wrap: wrap;
+            -webkit-box-orient:horizontal;
+            -webkit-box-direction:normal;
+                -ms-flex-direction:row;
+                    flex-direction:row;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
             max-width: 700px;
             margin: 0 auto;
         }
     }
     .l-container{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         @include tablet{
-            justify-content: flex-start;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
         }
         img{
             width:80px;
@@ -247,7 +315,8 @@ p{
     bottom: 0;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
     @include tablet{
         bottom: 0;
     }

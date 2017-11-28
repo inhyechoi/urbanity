@@ -19,7 +19,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>	
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 	
 	<?php wp_head(); ?>
 </head>
@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'urbanity' ); ?></a>
-		<section class="test2">
+		<section class="main-text-container">
 			<div class="h-container">
 				<p class="main-text"><?php echo the_field('main_text'); ?></p>
 			</div>
@@ -40,7 +40,7 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<section class="logo-section">
-				<img src="<?php echo the_field('header_logo'); ?>" alt="logo" class="header-logo">
+				<a href="<?php echo home_url(); ?>"><img src="<?php echo the_field('header_logo'); ?>" alt="logo" class="header-logo"></a>
 			</section>	
 	
 		</nav><!-- #site-navigation -->
