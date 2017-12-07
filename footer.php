@@ -31,7 +31,7 @@
           <a href="https://www.instagram.com/hdurbanity/"><img class="fb" src="<?php echo get_template_directory_uri() ?>/assets/ig.png" /></a>
         </div>
         <div class="copyright l-container">
-					<p>© 2017 - URBANITY - All Rights Reserved</p>
+					<p>Urbanity is a brand of HWADONG HOLDINGS INC., registered in British Columbia, Canada</p>
 				</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
