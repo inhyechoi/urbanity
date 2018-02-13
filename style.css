@@ -1024,13 +1024,16 @@ header {
       max-width: 1500px; } }
 
 .main-text-container {
-  height: 100vh;
+  height: 600px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (min-width: 1200px) {
+    .main-text-container {
+      height: 900px; } }
   .main-text-container .main-text {
     color: #FFA31D;
     text-transform: uppercase;
