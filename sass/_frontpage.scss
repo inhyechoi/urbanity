@@ -78,15 +78,15 @@ b{
 
 
 .about-section{
-    height:100vh;
+    height:900px;
     @include tablet{
-        height: 80vh;
+        height: 600px;
     }
     .l-container{
         position:relative;
-        height:100vh;
         @include tablet{
-            height: 80vh;
+            display:flex;
+            justify-content: space-around;
         }
         @include desktop{
             max-width: 1000px;
@@ -106,34 +106,12 @@ b{
         }
         .button{
             width: 150px;
-            padding: 4px 0;
+            padding: 6px 0;
             @include mobile{
                 width: 130px;
             }
             @include tablet{
                 width: 200px;
-            }
-        }
-        
-        .app-image{
-            width: 230px;
-            position: absolute;
-            bottom:0;
-            left: 50%;
-            margin-right: -50%;
-            -webkit-transform: translate(-50%, 0%);
-                    transform: translate(-50%, 0%);
-            @include tablet{
-                width: 350px;
-                max-width:400px;
-                left: 50%;
-                -webkit-transform: translate(0%, 0%);
-                        transform: translate(0%, 0%);
-            }
-            @include desktop{
-                width: 430px;
-                max-width: 600px;
-                margin-left: 10%;
             }
         }
     }
@@ -150,7 +128,7 @@ b{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 10px;
+    padding: 10px 0;
     @include tablet{
         -webkit-box-align:start;
             -ms-flex-align:start;
@@ -166,11 +144,11 @@ b{
 }
 
 .service-section{
-    height: 200vh;
+    height: 1350px;
     @include tablet{
         background-color: #fdfdfd;
         color: #FFA31D;
-        height: 100vh;
+        height: 750px;
     }
     .service-container{
         @include tablet{
@@ -185,6 +163,7 @@ b{
                 flex-wrap: wrap;
             max-width: 700px;
             margin: 0 auto;
+            height: 750px;
         }
     }
     .l-container{
@@ -214,7 +193,7 @@ b{
             }
         }
         h2{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             @include tablet{
                 font-size: 1.9rem;
             }
@@ -281,15 +260,15 @@ b{
 
 
 .about2-section{
-    height: 40vh;
+    height: 280px;
     @include tablet{
-        height: 100vh;
+        height: 500px;
     }
     .l-container{
         position:relative;
-        height:40vh;
+        height: 280px;
         @include tablet{
-            height: 100vh;
+            height: 500px;
         }
     }
 }
@@ -303,6 +282,7 @@ b{
             transform: translate(-50%, 0%);
     @include tablet{
         bottom: 0;
+        max-width:500px;
     }
     @include desktop{
         width: 750px;

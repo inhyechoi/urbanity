@@ -27,7 +27,9 @@ get_header(); ?>
                         <p><?php echo the_field('about_sub_text'); ?></p>
                         <img class="appstore button" src="<?php the_field('appstore_button'); ?>" />
                         <img class="googleplay button" src="<?php the_field('googleplay_button'); ?>" />
-                        <img class="app-image" src="<?php the_field('app_image'); ?>" />
+                    </div>
+                    <div class="about-app-section">
+                      <iframe src='//www.appdemostore.com/embed?id=4834234574307328' width='287.3436877737953' height='580' frameborder='0'></iframe>
                     </div>
                        
                 </div>

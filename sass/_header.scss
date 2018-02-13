@@ -20,11 +20,12 @@ header {
 .h-container{
   max-width:300px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 30px 0 30px 0;
   position: relative;
   text-align: center;
   @include tablet{
       max-width: 700px;
+      padding: 100px 0 30px 0;
   }
   @include desktop{
       max-width: 1500px;
