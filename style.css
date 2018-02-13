@@ -736,7 +736,7 @@ b {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+        justify-content: space-around; } }
     @media (min-width: 1200px) {
       .home .about-section .l-container {
         max-width: 1000px; } }
